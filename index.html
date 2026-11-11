@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finoana Rakotoniaina - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">Finoana Rakotoniaina</div>
+        <div class="nav-links">
+            <a href="#accueil">ACCUEIL</a>
+            <a href="#projets">PROJETS</a>
+            <a href="#formation">FORMATION</a>
+            <a href="#experiences">EXPÉRIENCES</a>
+            <a href="#competences">COMPÉTENCES</a>
+        </div>
+    </nav>
+
+    <!-- SECTION HERO -->
+    <section id="accueil" class="hero-split">
+        <div class="hero-text-side">
+            <h3>Développeuse Web & Logicielle</h3>
+            <p class="hero-presentation">Passionnée par le développement, je conçois des solutions web et logicielles qui allient fonctionnalité et design. Découvrez à travers ce portfolio mes projets et mon évolution dans le monde de l'IT.</p>
+            <a href="uploads/CV Finoana.pdf" class="btn-outline-white" target="_blank">TÉLÉCHARGER MON CV</a>
+        </div>
+        <div class="hero-image-side">
+            <img src="uploads/Finoana.jpg" alt="Photo de profil">
+        </div>
+    </section>
+
+    <!-- SECTION PROJETS -->
+    <section id="projets" class="bg-beige">
+        <div class="text-center">
+            <h2 class="script-title">Mes Projets</h2>
+        </div>
+        <div class="grid-container">
+            
+            <!-- PROJET 1 : SUPERCAR -->
+            <div class="folder-card" onclick="openModal('modal-supercar')">
+                <div class="folder-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                </div>
+                <h3 class="script-title">Supercar</h3>
+            </div>
+            <div id="modal-supercar" class="modal">
+                <div class="modal-content modal-large" id="content-supercar">
+                    <div class="window-controls">
+                        <span class="close-btn" onclick="closeModal('modal-supercar')">&times;</span>
+                    </div>
+                    <div class="modal-image-header">
+                        <img src="uploads/supercar.jpg" alt="Aperçu de Supercar">
+                    </div>
+                    <div class="modal-body">
+                        <h3 class="script-title" style="font-size: 2.5rem;">Supercar</h3>
+                        <div class="modal-meta">
+                            <span class="meta-item"><i class="fas fa-users"></i> En équipe</span>
+                            <span class="meta-separator">|</span>
+                            <div class="tags" style="margin-bottom: 0; justify-content: flex-start;">
+                                <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">JavaScript</span><span class="tag">CSS</span>
+                            </div>
+                        </div>
+                        <p style="margin-top: 1rem; font-size: 0.95rem;">Site web dynamique pour un concessionnaire automobile. Il renforce sa visibilité en ligne et digitalise ses services : côté client et admin.</p>
+                        <div class="modal-links">
+                            <a href="https://canva.link/koxfixe35zcsfq6" class="btn-dark" target="_blank">PRÉSENTATION</a>
+                            <a href="https://github.com/finoanarakotoniaina/DEP1.git" class="btn-dark" target="_blank">CODE SOURCE</a>
+                            <a href="https://finoana.alwaysdata.net/client/accueil.php" class="btn-dark" target="_blank">ACCEDER AU SITE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJET 2 : CINÉTRACK -->
+            <div class="folder-card" onclick="openModal('modal-cinetrack')">
+                <div class="folder-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                </div>
+                <h3 class="script-title">CinéTrack</h3>
+            </div>
+            <div id="modal-cinetrack" class="modal">
+                <div class="modal-content modal-large" id="content-cinetrack">
+                    <div class="window-controls">
+                        <span class="close-btn" onclick="closeModal('modal-cinetrack')">&times;</span>
+                    </div>
+                    <div class="modal-image-header">
+                        <img src="uploads/cinetrack.jpg" alt="Aperçu de CinéTrack">
+                    </div>
+                    <div class="modal-body">
+                        <h3 class="script-title" style="font-size: 2.5rem;">CinéTrack</h3>
+                        <div class="modal-meta">
+                            <span class="meta-item"><i class="fas fa-users"></i> En équipe</span>
+                            <span class="meta-separator">|</span>
+                            <div class="tags" style="margin-bottom: 0; justify-content: flex-start;">
+                                <span class="tag">Java</span><span class="tag">JavaFX</span><span class="tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                        <p style="margin-top: 1rem; font-size: 0.95rem;">Application desktop de gestion cinématographique, exclusivement pour les internes du cinéma Le Lumière.</p>
+                        <div class="modal-links">
+                            <a href="https://canva.link/onc67bv7twy9d8c" class="btn-dark" target="_blank">PRÉSENTATION</a>
+                            <a href="https://github.com/Miantsa-07/CINETRACK_GROUPE_7.git" class="btn-dark" target="_blank">CODE SOURCE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJET 3 : CARLTON -->
+            <div class="folder-card" onclick="openModal('modal-carlton')">
+                <div class="folder-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                </div>
+                <h3 class="script-title">Gestion Satisfaction </h3>
+            </div>
+            <div id="modal-carlton" class="modal">
+                <div class="modal-content modal-large" id="content-carlton">
+                    <div class="window-controls">
+                        <span class="close-btn" onclick="closeModal('modal-carlton')">&times;</span>
+                    </div>
+                    <div class="modal-image-header">
+                        <img src="uploads/carlton.webp" alt="Aperçu de l'application Carlton">
+                    </div>
+                    <div class="modal-body">
+                        <h3 class="script-title" style="font-size: 2.5rem;">Gestion Satisfaction Client</h3>
+                        <div class="modal-meta">
+                            <span class="meta-item"><i class="fas fa-user"></i> En autonomie</span>
+                            <span class="meta-separator">|</span>
+                            <div class="tags" style="margin-bottom: 0; justify-content: flex-start;">
+                                <span class="tag">React.js</span><span class="tag">Node.js</span>
+                            </div>
+                        </div>
+                        <p style="margin-top: 1rem; font-size: 0.95rem;">Application web développée lors de mon stage à l'Hotel Carlton Madagascar. Elle permet de gérer la satisfaction des clients de l'hôtel.</p>
+                        <div class="modal-links">
+                            <a href="uploads/Rapport.pdf" class="btn-dark" target="_blank">RAPPORT</a>
+                            <a href="uploads/Attestation.pdf" class="btn-dark" target="_blank">ATTESTATION</a>
+                            <a href="https://canva.link/djova9bfg0baqna" class="btn-dark" target="_blank">PRÉSENTATION</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION FORMATION -->
+    <section id="formation" class="bg-beige">
+        <div class="text-center">
+            <h2 class="script-title">Ma Formation</h2>
+        </div>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025 - Aujourd'hui</div>
+                <div class="timeline-content">
+                    <h3>BTS Services Informatiques aux Organisations</h3>
+                    <p class="timeline-subtitle">Option Solutions Logicielles et Applications Métiers (SLAM) <br> 2e année en cours </p>
+                    <p>MCCI Business School - Ebène, Maurice</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025</div>
+                <div class="timeline-content">
+                    <h3>Baccalauréat Français Série Générale</h3>
+                    <p class="timeline-subtitle">Spécialités Mathématiques et Physique-Chimie</p>
+                    <p>Lycée P'tit Michou - Itaosy, Madagascar</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2016 - 2024</div>
+                <div class="timeline-content">
+                    <h3>Diplômes de Langue Française</h3>
+                    <p class="timeline-subtitle">A1, B2, C1 et C2</p>
+                    <p>Alliance Française de Tananarive</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION EXPÉRIENCES -->
+    <section id="experiences" class="bg-beige">
+        <div class="text-center">
+            <h2 class="script-title">Mes Expériences Professionnelles</h2>
+        </div>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot" style="background-color: var(--dossier-jaune); box-shadow: 0 0 0 3px #f9e8a8;"></div>
+                <div class="timeline-date">Juin - Juillet 2025 (6 semaines)</div>
+                <div class="timeline-content">
+                    <h3>Hotel Carlton Madagascar</h3>
+                    <p class="timeline-subtitle">Stagiaire Développeur</p>
+                    <p>Conception et développement d'une application web de gestion de satisfaction client en React.js et Node.js. Interventions informatiques quotidiennes et travail en équipe au sein de la section IT.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot" style="background-color: var(--dossier-jaune); box-shadow: 0 0 0 3px #f9e8a8;"></div>
+                <div class="timeline-date">Décembre 2025</div>
+                <div class="timeline-content">
+                    <h3>Assistante Événementielle</h3>
+                    <p class="timeline-subtitle">MCCI Business School - Ebène, Maurice</p>
+                    <p>Aide aux organisateurs et accueil des diplômés.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot" style="background-color: var(--dossier-jaune); box-shadow: 0 0 0 3px #f9e8a8;"></div>
+                <div class="timeline-date">2010 - Aujourd'hui</div>
+                <div class="timeline-content">
+                    <h3>Bénévole - Coach & Athlète Nationale</h3>
+                    <p class="timeline-subtitle">Association des Amis du TaeKwonDo (AATKD) - 67ha, Madagascar</p>
+                    <p>Grade : Ceinture Noire, 1ère DAN KUKKIWON.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION COMPETENCES -->
+    <section id="competences" class="bg-blue three-cols-section">
+        <div class="col">
+            <h4 class="script-title">Front-end</h4>
+            <p>HTML5 / CSS3<br>JavaScript<br>React.js</p>
+        </div>
+        <div class="col">
+            <h4 class="script-title">Back-end</h4>
+            <p>PHP<br>Java<br>Node.js</p>
+        </div>
+        <div class="col">
+            <h4 class="script-title">Bases de données</h4>
+            <p>MySQL<br>PostgreSQL</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-cols">
+            <div class="footer-col">
+                <h5>CONTACT</h5>
+                <p><a href="mailto:finoanasafidisoar@gmail.com">Email</a></p>
+                <p>+230 5 518 6652</p>
+            </div>
+            <div class="footer-col">
+                <h5>LIENS</h5>
+                <p><a href="#projets">Projets</a></p>
+                <p><a href="#experiences">Expériences</a></p>
+            </div>
+            <div class="footer-col">
+                <h5>RÉSEAUX</h5>
+                <div class="social-icons">
+                    <a href="https://wa.me/23055186652" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://linkedin.com/in/finoanarakotoniaina" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:finoanasafidisoar@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/finoanarakotoniaina" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Finoana Rakotoniaina </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
